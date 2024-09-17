@@ -1,4 +1,3 @@
-```markdown
 # Mosys Billing
 
 Mosys Billing is a desktop application that allows users to control smart TVs using a graphical user interface (GUI). The application provides functionalities such as adding TVs, controlling their power state, adjusting volume, streaming media, and setting timers.
@@ -32,7 +31,7 @@ Mosys Billing is a desktop application that allows users to control smart TVs us
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/mosys-billing.git
+   git clone https://github.com/dypras666/mosys-billing.git
    cd mosys-billing
    ```
 
