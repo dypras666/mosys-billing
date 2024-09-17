@@ -11,12 +11,10 @@ Mosys Billing is a desktop application that allows users to control smart TVs us
 - **Custom Messages**: Display custom messages on the TV when the timer expires.
 
 ## Screenshots
-
-### Home Screen
-![Home Screen](home.png)
-
-### Remote Control Screen
-![Remote Control Screen](remote.png)
+<div style="display: flex; justify-content: space-around;">
+    <img src="home.png" alt="Home Screen" width="300" style="margin: 10px;" />
+    <img src="remote.png" alt="Remote Control Screen" width="300" style="margin: 10px;" />
+</div>
 
 ## Requirements
 
@@ -87,17 +85,3 @@ For any inquiries, please contact:
 - **Website**: [sedot.dev](https://sedot.dev)
 - **Contact Number**: 081373350813
 ```
-
-### Explanation of the Added Sections
-
-- **Screenshots**: This section includes two images:
-  - **Home Screen**: Displays the main interface of the application.
-  - **Remote Control Screen**: Shows the remote control functionalities.
-
-### Image Placement
-
-- Make sure to place the `home.png` and `remote.png` images in the same directory as your `README.md` file, or adjust the paths accordingly if they are located in a different folder.
-
-### Final Note
-
-Feel free to modify the text or add more screenshots as needed! If you have any other requests or need further assistance, let me know!
