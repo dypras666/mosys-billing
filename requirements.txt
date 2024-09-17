@@ -1,2 +1,4 @@
-flask==2.0.1
-ping3==3.0.2
+Flask==2.2.2          # A lightweight WSGI web application framework for Python
+PyQt5==5.15.7        # A set of Python bindings for Qt libraries for GUI development
+ping3==3.1.0         # A pure Python 3 implementation of the ping command
+requests==2.28.1     # A simple HTTP library for Python

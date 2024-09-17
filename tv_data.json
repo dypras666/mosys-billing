@@ -1,0 +1,1 @@
+{"192.168.1.10": {"name": "ps01", "status": "Online", "response_time": "0.01 ms", "timer": 5, "timer_action": "volume_up"}, "192.168.1.12": {"name": "TV 02", "status": "Offline", "response_time": "N/A"}}
