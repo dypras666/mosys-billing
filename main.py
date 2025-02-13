@@ -1,6 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtCore import QThread
+from PyQt5.QtWidgets import QApplication # type: ignore
+from PyQt5.QtCore import QThread # type: ignore
 from gui import MosysBillingGUI
 from flask_app import app, load_tv_data
 

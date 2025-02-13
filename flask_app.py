@@ -229,33 +229,7 @@ def start_tv_timer():
     else:
         logger.error(f"Failed to start timer on TV {ip}")
         return jsonify({"error": "Failed to start timer on TV"}), 500
-
-# @app.route('/set_timer', methods=['POST'])
-# def set_timer():
-#     data = request.json
-#     ip = data.get('ip')
-#     action = data.get('action')
-#     seconds = data.get('seconds')
-    
-#     if ip not in tvs:
-#         return jsonify({"error": "TV not found"}), 404
-    
-#     if action not in command_map:
-#         return jsonify({"error": "Invalid action"}), 400
-    
-#     async def timer_action():
-#         logger.info(f"Timer started for {ip}, action: {action}, duration: {seconds} seconds")
-#         await asyncio.sleep(seconds)
-#         command = command_map[action]
-#         result = run_adb_command(ip, command)
-#         if result is not None:
-#             logger.info(f"Timer executed {action} command on {ip}")
-#         else:
-#             logger.error(f"Timer failed to execute {action} command on {ip}")
-
-#     loop.create_task(timer_action())
-    
-#     return jsonify({"message": f"Timer set for {seconds} seconds to {action}"}), 200
+ 
 @app.route('/control_tv', methods=['POST'])
 def control_tv():
     data = request.json
