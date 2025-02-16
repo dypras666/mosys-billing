@@ -1,13 +1,13 @@
 import json
 import subprocess
-from PyQt5.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
+from PyQt5.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,  # type: ignore
                              QPushButton, QLineEdit, QLabel, QTextEdit, 
                              QMessageBox, QComboBox, QGridLayout, QInputDialog, 
                              QTabWidget, QFileDialog, QCheckBox)
-from PyQt5.QtCore import QTimer
-from PyQt5.QtGui import QFont
+from PyQt5.QtCore import QTimer # type: ignore
+from PyQt5.QtGui import QFont # type: ignore
 from flask_app import app
-import requests
+import requests # type: ignore
 import os
 import urllib.parse
 import shlex
@@ -43,6 +43,8 @@ class MosysBillingGUI(QMainWindow):
         <h2>Panduan Penggunaan Mosys Billing</h2>
         <p>Selamat datang di aplikasi Mosys Billing. Berikut adalah panduan singkat penggunaan:</p>
         <ol>
+            <li>Wajib mengaktifkan debug mode WIFI di android tv </li>
+            <li>Wajib mendownload Android ADB https://developer.android.com/studio/releases/platform-tools?hl=id</li>
             <li>Untuk menambahkan TV baru, gunakan tab "Remote" dan isi nama serta IP TV.</li>
             <li>Anda dapat melihat status semua TV pada daftar di tab "Remote".</li>
             <li>Untuk mengontrol TV, pilih TV dari daftar dan gunakan tombol kontrol yang tersedia.</li>
