@@ -111,58 +111,7 @@ def edit_tv():
 @app.route('/tv_status', methods=['GET'])
 def get_tv_status():
     return jsonify(tvs)
-
-# @app.route('/control_tv', methods=['POST'])
-# def control_tv():
-#     data = request.json
-#     ip = data.get('ip')
-#     action = data.get('action')
-    
-#     if ip not in tvs:
-#         return jsonify({"error": "TV not found"}), 404
-    
-#     if action == 'on':
-#         logging.warning("'On' action may not work via ADB")
-#         return jsonify({"message": "TV on command sent (may not work via ADB)"}), 200
-#     elif action in ['off', 'sleep', 'volume_up', 'volume_down']:
-#         command_map = {
-#             'off': "input keyevent KEYCODE_POWER",
-#             'sleep': "input keyevent KEYCODE_SLEEP",
-#             'volume_up': "input keyevent KEYCODE_VOLUME_UP",
-#             'volume_down': "input keyevent KEYCODE_VOLUME_DOWN",
-#             'home': "input keyevent KEYCODE_HOME"  # Added home command
-#         }
-#         result = run_adb_command(ip, command_map[action])
-#         if result is not None:
-#             logging.info(f"Successfully sent {action} command to {ip}")
-#             return jsonify({"message": f"{action} command sent successfully"}), 200
-#         else:
-#             logging.error(f"Failed to send {action} command to {ip}")
-#             return jsonify({"error": f"Failed to send {action} command"}), 500
-#     else:
-#         return jsonify({"error": "Invalid action"}), 400
-    
-# @app.route('/start_tv_timer', methods=['POST'])
-# def start_tv_timer():
-#     data = request.json
-#     ip = data.get('ip')
-#     seconds = data.get('seconds')
-    
-#     if ip not in tvs:
-#         return jsonify({"error": "TV not found"}), 404
-    
-#     # Kirim perintah ke aplikasi TimerOverlay
-#     command = f"am start -n com.mosys.billing/.MainActivity --ei seconds {seconds}"
-#     result = run_adb_command(ip, command)
-    
-#     if result is not None:
-#         logging.info(f"Started timer on TV {ip} for {seconds} seconds")
-#         return jsonify({"message": f"Timer started on TV for {seconds} seconds"}), 200
-#     else:
-#         logging.error(f"Failed to start timer on TV {ip}")
-#         return jsonify({"error": "Failed to start timer on TV"}), 500
-
-
+ 
 @app.route('/stream_media/<ip>', methods=['POST'])
 def stream_media(ip):
     if ip not in tvs:
